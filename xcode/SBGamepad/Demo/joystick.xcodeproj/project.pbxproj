@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* joystickViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* joystickViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* joystickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* joystickViewController.m */; };
+		D055BEB3112F1D8B003E3547 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = D055BEB2112F1D8B003E3547 /* Entitlements.plist */; };
+		D098F4AA1497F53E009A77BD /* SBJoystick.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D098F4A81497F53E009A77BD /* SBJoystick.a */; };
+		D0A1372613F55EA600F7CC17 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1370313F55EA600F7CC17 /* background.png */; };
+		D0A1372713F55EA600F7CC17 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1370413F55EA600F7CC17 /* background@2x.png */; };
+		D0A1372813F55EA600F7CC17 /* button-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1370513F55EA600F7CC17 /* button-1.png */; };
+		D0A1372913F55EA600F7CC17 /* button-1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1370613F55EA600F7CC17 /* button-1@2x.png */; };
+		D0A1372A13F55EA600F7CC17 /* button-2.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1370713F55EA600F7CC17 /* button-2.png */; };
+		D0A1372B13F55EA600F7CC17 /* button-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1370813F55EA600F7CC17 /* button-2@2x.png */; };
+		D0A1372C13F55EA600F7CC17 /* button-3.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1370913F55EA600F7CC17 /* button-3.png */; };
+		D0A1372D13F55EA600F7CC17 /* button-3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1370A13F55EA600F7CC17 /* button-3@2x.png */; };
+		D0A1372E13F55EA600F7CC17 /* button-4.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1370B13F55EA600F7CC17 /* button-4.png */; };
+		D0A1372F13F55EA600F7CC17 /* button-4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1370C13F55EA600F7CC17 /* button-4@2x.png */; };
+		D0A1373013F55EA600F7CC17 /* button-L1.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1370D13F55EA600F7CC17 /* button-L1.png */; };
+		D0A1373113F55EA600F7CC17 /* button-L1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1370E13F55EA600F7CC17 /* button-L1@2x.png */; };
+		D0A1373213F55EA600F7CC17 /* button-L2.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1370F13F55EA600F7CC17 /* button-L2.png */; };
+		D0A1373313F55EA600F7CC17 /* button-L2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1371013F55EA600F7CC17 /* button-L2@2x.png */; };
+		D0A1373413F55EA600F7CC17 /* button-mode.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1371113F55EA600F7CC17 /* button-mode.png */; };
+		D0A1373513F55EA600F7CC17 /* button-mode@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1371213F55EA600F7CC17 /* button-mode@2x.png */; };
+		D0A1373613F55EA600F7CC17 /* button-R1.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1371313F55EA600F7CC17 /* button-R1.png */; };
+		D0A1373713F55EA600F7CC17 /* button-R1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1371413F55EA600F7CC17 /* button-R1@2x.png */; };
+		D0A1373813F55EA600F7CC17 /* button-R2.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1371513F55EA600F7CC17 /* button-R2.png */; };
+		D0A1373913F55EA600F7CC17 /* button-R2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1371613F55EA600F7CC17 /* button-R2@2x.png */; };
+		D0A1373A13F55EA600F7CC17 /* button-select.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1371713F55EA600F7CC17 /* button-select.png */; };
+		D0A1373B13F55EA600F7CC17 /* button-select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1371813F55EA600F7CC17 /* button-select@2x.png */; };
+		D0A1373C13F55EA600F7CC17 /* button-start.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1371913F55EA600F7CC17 /* button-start.png */; };
+		D0A1373D13F55EA600F7CC17 /* button-start@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1371A13F55EA600F7CC17 /* button-start@2x.png */; };
+		D0A1373E13F55EA600F7CC17 /* d-down.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1371B13F55EA600F7CC17 /* d-down.png */; };
+		D0A1373F13F55EA600F7CC17 /* d-down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1371C13F55EA600F7CC17 /* d-down@2x.png */; };
+		D0A1374013F55EA600F7CC17 /* d-left.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1371D13F55EA600F7CC17 /* d-left.png */; };
+		D0A1374113F55EA600F7CC17 /* d-left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1371E13F55EA600F7CC17 /* d-left@2x.png */; };
+		D0A1374213F55EA600F7CC17 /* d-right.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1371F13F55EA600F7CC17 /* d-right.png */; };
+		D0A1374313F55EA600F7CC17 /* d-right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1372013F55EA600F7CC17 /* d-right@2x.png */; };
+		D0A1374413F55EA600F7CC17 /* d-up.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1372113F55EA600F7CC17 /* d-up.png */; };
+		D0A1374513F55EA600F7CC17 /* d-up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1372213F55EA600F7CC17 /* d-up@2x.png */; };
+		D0A1374613F55EA600F7CC17 /* dimensions.txt in Resources */ = {isa = PBXBuildFile; fileRef = D0A1372313F55EA600F7CC17 /* dimensions.txt */; };
+		D0A1375313F5633200F7CC17 /* 512.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0A1374F13F5633200F7CC17 /* 512.jpg */; };
+		D0A1375413F5633200F7CC17 /* ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1375013F5633200F7CC17 /* ipad.png */; };
+		D0A1375513F5633200F7CC17 /* iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1375113F5633200F7CC17 /* iphone.png */; };
+		D0A1375613F5633200F7CC17 /* iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1375213F5633200F7CC17 /* iphone@2x.png */; };
+		D0A1375B13F5660E00F7CC17 /* analog@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1375713F5660D00F7CC17 /* analog@2x.png */; };
+		D0A1375C13F5660E00F7CC17 /* analog.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1375813F5660D00F7CC17 /* analog.png */; };
+		D0A1375D13F5660E00F7CC17 /* analog-down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1375913F5660D00F7CC17 /* analog-down@2x.png */; };
+		D0A1375E13F5660E00F7CC17 /* analog-down.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1375A13F5660E00F7CC17 /* analog-down.png */; };
+		D0A1977B13C731CF00284BB9 /* controller.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0A1977A13C731CF00284BB9 /* controller.jpg */; };
+		D0AD1A791451052200909566 /* joystickAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = D0AD1A781451052200909566 /* joystickAppDelegate.mm */; };
+		D0AD1A84145107A900909566 /* CDAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AD1A7C145107A900909566 /* CDAudioManager.m */; };
+		D0AD1A85145107A900909566 /* CDOpenALSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AD1A7F145107A900909566 /* CDOpenALSupport.m */; };
+		D0AD1A86145107A900909566 /* CocosDenshion.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AD1A81145107A900909566 /* CocosDenshion.m */; };
+		D0AD1A87145107A900909566 /* SimpleAudioEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AD1A83145107A900909566 /* SimpleAudioEngine.m */; };
+		D0AD1A89145107D400909566 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AD1A88145107D400909566 /* OpenAL.framework */; };
+		D0AD1A8F1451093200909566 /* sound1.wav in Resources */ = {isa = PBXBuildFile; fileRef = D0AD1A8B1451093200909566 /* sound1.wav */; };
+		D0AD1A901451093200909566 /* sound2.wav in Resources */ = {isa = PBXBuildFile; fileRef = D0AD1A8C1451093200909566 /* sound2.wav */; };
+		D0AD1A911451093200909566 /* sound3.wav in Resources */ = {isa = PBXBuildFile; fileRef = D0AD1A8D1451093200909566 /* sound3.wav */; };
+		D0AD1A921451093200909566 /* sound4.wav in Resources */ = {isa = PBXBuildFile; fileRef = D0AD1A8E1451093200909566 /* sound4.wav */; };
+		D0C874E81418FBF100F4ABCD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C874E71418FBF100F4ABCD /* AVFoundation.framework */; };
+		D0C874EA1418FBFC00F4ABCD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C874E91418FBFC00F4ABCD /* AudioToolbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* joystickAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = joystickAppDelegate.h; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* joystick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = joystick.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* joystickViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = joystickViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* joystickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = joystickViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* joystickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = joystickViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* joystick_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = joystick_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* joystick-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "joystick-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		D055BEB2112F1D8B003E3547 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		D098F4A71497F53E009A77BD /* SBJoystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJoystick.h; sourceTree = "<group>"; };
+		D098F4A81497F53E009A77BD /* SBJoystick.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = SBJoystick.a; sourceTree = "<group>"; };
+		D098F4A91497F53E009A77BD /* SBControlScheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBControlScheme.h; sourceTree = "<group>"; };
+		D0A1370313F55EA600F7CC17 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		D0A1370413F55EA600F7CC17 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		D0A1370513F55EA600F7CC17 /* button-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-1.png"; sourceTree = "<group>"; };
+		D0A1370613F55EA600F7CC17 /* button-1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-1@2x.png"; sourceTree = "<group>"; };
+		D0A1370713F55EA600F7CC17 /* button-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-2.png"; sourceTree = "<group>"; };
+		D0A1370813F55EA600F7CC17 /* button-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-2@2x.png"; sourceTree = "<group>"; };
+		D0A1370913F55EA600F7CC17 /* button-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-3.png"; sourceTree = "<group>"; };
+		D0A1370A13F55EA600F7CC17 /* button-3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-3@2x.png"; sourceTree = "<group>"; };
+		D0A1370B13F55EA600F7CC17 /* button-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-4.png"; sourceTree = "<group>"; };
+		D0A1370C13F55EA600F7CC17 /* button-4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-4@2x.png"; sourceTree = "<group>"; };
+		D0A1370D13F55EA600F7CC17 /* button-L1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-L1.png"; sourceTree = "<group>"; };
+		D0A1370E13F55EA600F7CC17 /* button-L1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-L1@2x.png"; sourceTree = "<group>"; };
+		D0A1370F13F55EA600F7CC17 /* button-L2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-L2.png"; sourceTree = "<group>"; };
+		D0A1371013F55EA600F7CC17 /* button-L2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-L2@2x.png"; sourceTree = "<group>"; };
+		D0A1371113F55EA600F7CC17 /* button-mode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-mode.png"; sourceTree = "<group>"; };
+		D0A1371213F55EA600F7CC17 /* button-mode@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-mode@2x.png"; sourceTree = "<group>"; };
+		D0A1371313F55EA600F7CC17 /* button-R1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-R1.png"; sourceTree = "<group>"; };
+		D0A1371413F55EA600F7CC17 /* button-R1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-R1@2x.png"; sourceTree = "<group>"; };
+		D0A1371513F55EA600F7CC17 /* button-R2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-R2.png"; sourceTree = "<group>"; };
+		D0A1371613F55EA600F7CC17 /* button-R2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-R2@2x.png"; sourceTree = "<group>"; };
+		D0A1371713F55EA600F7CC17 /* button-select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-select.png"; sourceTree = "<group>"; };
+		D0A1371813F55EA600F7CC17 /* button-select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-select@2x.png"; sourceTree = "<group>"; };
+		D0A1371913F55EA600F7CC17 /* button-start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-start.png"; sourceTree = "<group>"; };
+		D0A1371A13F55EA600F7CC17 /* button-start@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-start@2x.png"; sourceTree = "<group>"; };
+		D0A1371B13F55EA600F7CC17 /* d-down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "d-down.png"; sourceTree = "<group>"; };
+		D0A1371C13F55EA600F7CC17 /* d-down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "d-down@2x.png"; sourceTree = "<group>"; };
+		D0A1371D13F55EA600F7CC17 /* d-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "d-left.png"; sourceTree = "<group>"; };
+		D0A1371E13F55EA600F7CC17 /* d-left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "d-left@2x.png"; sourceTree = "<group>"; };
+		D0A1371F13F55EA600F7CC17 /* d-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "d-right.png"; sourceTree = "<group>"; };
+		D0A1372013F55EA600F7CC17 /* d-right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "d-right@2x.png"; sourceTree = "<group>"; };
+		D0A1372113F55EA600F7CC17 /* d-up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "d-up.png"; sourceTree = "<group>"; };
+		D0A1372213F55EA600F7CC17 /* d-up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "d-up@2x.png"; sourceTree = "<group>"; };
+		D0A1372313F55EA600F7CC17 /* dimensions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dimensions.txt; sourceTree = "<group>"; };
+		D0A1374F13F5633200F7CC17 /* 512.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 512.jpg; sourceTree = "<group>"; };
+		D0A1375013F5633200F7CC17 /* ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipad.png; sourceTree = "<group>"; };
+		D0A1375113F5633200F7CC17 /* iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone.png; sourceTree = "<group>"; };
+		D0A1375213F5633200F7CC17 /* iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone@2x.png"; sourceTree = "<group>"; };
+		D0A1375713F5660D00F7CC17 /* analog@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "analog@2x.png"; sourceTree = "<group>"; };
+		D0A1375813F5660D00F7CC17 /* analog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = analog.png; sourceTree = "<group>"; };
+		D0A1375913F5660D00F7CC17 /* analog-down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "analog-down@2x.png"; sourceTree = "<group>"; };
+		D0A1375A13F5660E00F7CC17 /* analog-down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "analog-down.png"; sourceTree = "<group>"; };
+		D0A1977A13C731CF00284BB9 /* controller.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = controller.jpg; sourceTree = "<group>"; };
+		D0AD1A781451052200909566 /* joystickAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = joystickAppDelegate.mm; sourceTree = "<group>"; };
+		D0AD1A7B145107A900909566 /* CDAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAudioManager.h; sourceTree = "<group>"; };
+		D0AD1A7C145107A900909566 /* CDAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAudioManager.m; sourceTree = "<group>"; };
+		D0AD1A7D145107A900909566 /* CDConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDConfig.h; sourceTree = "<group>"; };
+		D0AD1A7E145107A900909566 /* CDOpenALSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOpenALSupport.h; sourceTree = "<group>"; };
+		D0AD1A7F145107A900909566 /* CDOpenALSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOpenALSupport.m; sourceTree = "<group>"; };
+		D0AD1A80145107A900909566 /* CocosDenshion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocosDenshion.h; sourceTree = "<group>"; };
+		D0AD1A81145107A900909566 /* CocosDenshion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocosDenshion.m; sourceTree = "<group>"; };
+		D0AD1A82145107A900909566 /* SimpleAudioEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAudioEngine.h; sourceTree = "<group>"; };
+		D0AD1A83145107A900909566 /* SimpleAudioEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAudioEngine.m; sourceTree = "<group>"; };
+		D0AD1A88145107D400909566 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		D0AD1A8B1451093200909566 /* sound1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound1.wav; sourceTree = "<group>"; };
+		D0AD1A8C1451093200909566 /* sound2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound2.wav; sourceTree = "<group>"; };
+		D0AD1A8D1451093200909566 /* sound3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound3.wav; sourceTree = "<group>"; };
+		D0AD1A8E1451093200909566 /* sound4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound4.wav; sourceTree = "<group>"; };
+		D0C874E51418FBC700F4ABCD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D0C874E71418FBF100F4ABCD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D0C874E91418FBFC00F4ABCD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0AD1A89145107D400909566 /* OpenAL.framework in Frameworks */,
+				D0C874EA1418FBFC00F4ABCD /* AudioToolbox.framework in Frameworks */,
+				D0C874E81418FBF100F4ABCD /* AVFoundation.framework in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				D098F4AA1497F53E009A77BD /* SBJoystick.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D0AD1A7A145107A900909566 /* Denshion */,
+				D0AD1A781451052200909566 /* joystickAppDelegate.mm */,
+				1D3623240D0F684500981E51 /* joystickAppDelegate.h */,
+				28D7ACF60DDB3853001CB0EB /* joystickViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* joystickViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* joystick.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				D0AD1A88145107D400909566 /* OpenAL.framework */,
+				D0C874E91418FBFC00F4ABCD /* AudioToolbox.framework */,
+				D0C874E71418FBF100F4ABCD /* AVFoundation.framework */,
+				D08CC03A1418F1050006B57A /* lib */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				D055BEB2112F1D8B003E3547 /* Entitlements.plist */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* joystick_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D0AD1A8A1451093200909566 /* Sounds */,
+				D0A1374F13F5633200F7CC17 /* 512.jpg */,
+				D0A1375013F5633200F7CC17 /* ipad.png */,
+				D0A1375113F5633200F7CC17 /* iphone.png */,
+				D0A1375213F5633200F7CC17 /* iphone@2x.png */,
+				D0A1977A13C731CF00284BB9 /* controller.jpg */,
+				D003EDDB112C537F00F74CF4 /* UserInterface */,
+				2899E5210DE3E06400AC0155 /* joystickViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* joystick-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0C874E51418FBC700F4ABCD /* AVFoundation.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D003EDDB112C537F00F74CF4 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				D0A1375713F5660D00F7CC17 /* analog@2x.png */,
+				D0A1375813F5660D00F7CC17 /* analog.png */,
+				D0A1375913F5660D00F7CC17 /* analog-down@2x.png */,
+				D0A1375A13F5660E00F7CC17 /* analog-down.png */,
+				D0A1370313F55EA600F7CC17 /* background.png */,
+				D0A1370413F55EA600F7CC17 /* background@2x.png */,
+				D0A1370513F55EA600F7CC17 /* button-1.png */,
+				D0A1370613F55EA600F7CC17 /* button-1@2x.png */,
+				D0A1370713F55EA600F7CC17 /* button-2.png */,
+				D0A1370813F55EA600F7CC17 /* button-2@2x.png */,
+				D0A1370913F55EA600F7CC17 /* button-3.png */,
+				D0A1370A13F55EA600F7CC17 /* button-3@2x.png */,
+				D0A1370B13F55EA600F7CC17 /* button-4.png */,
+				D0A1370C13F55EA600F7CC17 /* button-4@2x.png */,
+				D0A1370D13F55EA600F7CC17 /* button-L1.png */,
+				D0A1370E13F55EA600F7CC17 /* button-L1@2x.png */,
+				D0A1370F13F55EA600F7CC17 /* button-L2.png */,
+				D0A1371013F55EA600F7CC17 /* button-L2@2x.png */,
+				D0A1371113F55EA600F7CC17 /* button-mode.png */,
+				D0A1371213F55EA600F7CC17 /* button-mode@2x.png */,
+				D0A1371313F55EA600F7CC17 /* button-R1.png */,
+				D0A1371413F55EA600F7CC17 /* button-R1@2x.png */,
+				D0A1371513F55EA600F7CC17 /* button-R2.png */,
+				D0A1371613F55EA600F7CC17 /* button-R2@2x.png */,
+				D0A1371713F55EA600F7CC17 /* button-select.png */,
+				D0A1371813F55EA600F7CC17 /* button-select@2x.png */,
+				D0A1371913F55EA600F7CC17 /* button-start.png */,
+				D0A1371A13F55EA600F7CC17 /* button-start@2x.png */,
+				D0A1371B13F55EA600F7CC17 /* d-down.png */,
+				D0A1371C13F55EA600F7CC17 /* d-down@2x.png */,
+				D0A1371D13F55EA600F7CC17 /* d-left.png */,
+				D0A1371E13F55EA600F7CC17 /* d-left@2x.png */,
+				D0A1371F13F55EA600F7CC17 /* d-right.png */,
+				D0A1372013F55EA600F7CC17 /* d-right@2x.png */,
+				D0A1372113F55EA600F7CC17 /* d-up.png */,
+				D0A1372213F55EA600F7CC17 /* d-up@2x.png */,
+				D0A1372313F55EA600F7CC17 /* dimensions.txt */,
+			);
+			name = UserInterface;
+			path = Resources/UserInterface;
+			sourceTree = "<group>";
+		};
+		D08CC03A1418F1050006B57A /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				D098F4A71497F53E009A77BD /* SBJoystick.h */,
+				D098F4A81497F53E009A77BD /* SBJoystick.a */,
+				D098F4A91497F53E009A77BD /* SBControlScheme.h */,
+			);
+			name = lib;
+			path = ../lib;
+			sourceTree = "<group>";
+		};
+		D0AD1A7A145107A900909566 /* Denshion */ = {
+			isa = PBXGroup;
+			children = (
+				D0AD1A7B145107A900909566 /* CDAudioManager.h */,
+				D0AD1A7C145107A900909566 /* CDAudioManager.m */,
+				D0AD1A7D145107A900909566 /* CDConfig.h */,
+				D0AD1A7E145107A900909566 /* CDOpenALSupport.h */,
+				D0AD1A7F145107A900909566 /* CDOpenALSupport.m */,
+				D0AD1A80145107A900909566 /* CocosDenshion.h */,
+				D0AD1A81145107A900909566 /* CocosDenshion.m */,
+				D0AD1A82145107A900909566 /* SimpleAudioEngine.h */,
+				D0AD1A83145107A900909566 /* SimpleAudioEngine.m */,
+			);
+			path = Denshion;
+			sourceTree = "<group>";
+		};
+		D0AD1A8A1451093200909566 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D0AD1A8B1451093200909566 /* sound1.wav */,
+				D0AD1A8C1451093200909566 /* sound2.wav */,
+				D0AD1A8D1451093200909566 /* sound3.wav */,
+				D0AD1A8E1451093200909566 /* sound4.wav */,
+			);
+			name = Sounds;
+			path = Resources/Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* joystick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "joystick" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = joystick;
+			productName = heartbeat;
+			productReference = 1D6058910D05DD3D006BFB54 /* joystick.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "joystick" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* joystick */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* joystickViewController.xib in Resources */,
+				D055BEB3112F1D8B003E3547 /* Entitlements.plist in Resources */,
+				D0A1977B13C731CF00284BB9 /* controller.jpg in Resources */,
+				D0A1372613F55EA600F7CC17 /* background.png in Resources */,
+				D0A1372713F55EA600F7CC17 /* background@2x.png in Resources */,
+				D0A1372813F55EA600F7CC17 /* button-1.png in Resources */,
+				D0A1372913F55EA600F7CC17 /* button-1@2x.png in Resources */,
+				D0A1372A13F55EA600F7CC17 /* button-2.png in Resources */,
+				D0A1372B13F55EA600F7CC17 /* button-2@2x.png in Resources */,
+				D0A1372C13F55EA600F7CC17 /* button-3.png in Resources */,
+				D0A1372D13F55EA600F7CC17 /* button-3@2x.png in Resources */,
+				D0A1372E13F55EA600F7CC17 /* button-4.png in Resources */,
+				D0A1372F13F55EA600F7CC17 /* button-4@2x.png in Resources */,
+				D0A1373013F55EA600F7CC17 /* button-L1.png in Resources */,
+				D0A1373113F55EA600F7CC17 /* button-L1@2x.png in Resources */,
+				D0A1373213F55EA600F7CC17 /* button-L2.png in Resources */,
+				D0A1373313F55EA600F7CC17 /* button-L2@2x.png in Resources */,
+				D0A1373413F55EA600F7CC17 /* button-mode.png in Resources */,
+				D0A1373513F55EA600F7CC17 /* button-mode@2x.png in Resources */,
+				D0A1373613F55EA600F7CC17 /* button-R1.png in Resources */,
+				D0A1373713F55EA600F7CC17 /* button-R1@2x.png in Resources */,
+				D0A1373813F55EA600F7CC17 /* button-R2.png in Resources */,
+				D0A1373913F55EA600F7CC17 /* button-R2@2x.png in Resources */,
+				D0A1373A13F55EA600F7CC17 /* button-select.png in Resources */,
+				D0A1373B13F55EA600F7CC17 /* button-select@2x.png in Resources */,
+				D0A1373C13F55EA600F7CC17 /* button-start.png in Resources */,
+				D0A1373D13F55EA600F7CC17 /* button-start@2x.png in Resources */,
+				D0A1373E13F55EA600F7CC17 /* d-down.png in Resources */,
+				D0A1373F13F55EA600F7CC17 /* d-down@2x.png in Resources */,
+				D0A1374013F55EA600F7CC17 /* d-left.png in Resources */,
+				D0A1374113F55EA600F7CC17 /* d-left@2x.png in Resources */,
+				D0A1374213F55EA600F7CC17 /* d-right.png in Resources */,
+				D0A1374313F55EA600F7CC17 /* d-right@2x.png in Resources */,
+				D0A1374413F55EA600F7CC17 /* d-up.png in Resources */,
+				D0A1374513F55EA600F7CC17 /* d-up@2x.png in Resources */,
+				D0A1374613F55EA600F7CC17 /* dimensions.txt in Resources */,
+				D0A1375313F5633200F7CC17 /* 512.jpg in Resources */,
+				D0A1375413F5633200F7CC17 /* ipad.png in Resources */,
+				D0A1375513F5633200F7CC17 /* iphone.png in Resources */,
+				D0A1375613F5633200F7CC17 /* iphone@2x.png in Resources */,
+				D0A1375B13F5660E00F7CC17 /* analog@2x.png in Resources */,
+				D0A1375C13F5660E00F7CC17 /* analog.png in Resources */,
+				D0A1375D13F5660E00F7CC17 /* analog-down@2x.png in Resources */,
+				D0A1375E13F5660E00F7CC17 /* analog-down.png in Resources */,
+				D0AD1A8F1451093200909566 /* sound1.wav in Resources */,
+				D0AD1A901451093200909566 /* sound2.wav in Resources */,
+				D0AD1A911451093200909566 /* sound3.wav in Resources */,
+				D0AD1A921451093200909566 /* sound4.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* joystickViewController.m in Sources */,
+				D0AD1A791451052200909566 /* joystickAppDelegate.mm in Sources */,
+				D0AD1A84145107A900909566 /* CDAudioManager.m in Sources */,
+				D0AD1A85145107A900909566 /* CDOpenALSupport.m in Sources */,
+				D0AD1A86145107A900909566 /* CocosDenshion.m in Sources */,
+				D0AD1A87145107A900909566 /* SimpleAudioEngine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Justin Morgenthau (6S56P7R6NH)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = joystick_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "joystick-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Classes\"",
+					"\"$(SRCROOT)/../lib\"",
+				);
+				PRODUCT_NAME = joystick;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2E764026-F2D1-41B4-8076-6F0A212B444B";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Oban US LLC";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = joystick_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "joystick-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Classes\"",
+					"\"$(SRCROOT)/../lib\"",
+				);
+				PRODUCT_NAME = joystick;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EC9B6FE5-5BBF-4CB6-B0AC-A6E6245943D6";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		D055BEAE112F1D34003E3547 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Distribution;
+		};
+		D055BEAF112F1D34003E3547 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = joystick_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "joystick-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Classes\"",
+					"\"$(SRCROOT)/../lib\"",
+				);
+				PRODUCT_NAME = joystick;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "joystick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				D055BEAF112F1D34003E3547 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "joystick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				D055BEAE112F1D34003E3547 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

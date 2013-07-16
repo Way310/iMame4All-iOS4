@@ -1,0 +1,24 @@
+iPhone coordinates for containing boxes for text.
+
+callouts, gamepad and all coordinates are in the same 430x270 container.
+
+l1	7	32	73	10
+l2	7	53	73	10
+d-up	7	88	73	10
+d-left	7	103	73	10
+d-right	7	118	73	10
+d-down	7	133	73	10
+d-unified	7	110	73	10
+direction-left	7	206	73	10
+l3	7	226	73	10
+r1	340	32	73	10
+r2	340	53	73	10
+1	340	88	73	10
+2	340	103	73	10
+3	340	118	73	10
+4	340	133	73	10
+direction-right	340	206	73	10
+r3	340	226	73	10
+select	135	35	49	10
+start	241	35	49	10
+mode	148	221	49	10
